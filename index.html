@@ -3,12 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" href="style.css"> <!-- CSS file link added -->
+    <title>Restaurant</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+       
+        body {
+            overflow-x: hidden;
+            overflow-y: auto;
+            }
+         
+        .hero {
+            background: url('resta.png') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2em;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+        }
+        nav {
+            position: absolute;
+            top: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            font-size: 1.2em;
+        }
+       
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+        .hero h1 {
+            margin-top: 60px; /* Navigation aur heading ke beech gap */
+            font-size: 3em;
+        }
+        .hero p {
+            margin-top: 20px;
+            font-size: 1.5em;
+        }
+        .contact-section {
+            background-color: #2ecc71;
+            color: white;
+            padding: 50px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+        .contact-column {
+            width: 45%;
+            text-align: left;
+            padding: 20px;
+            font-size: 1.4em;
+            line-height: 1.6;
+        }
+        .footer {
+            background-color: black;
+            color: white;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My GitHub Pages Website</h1>
-    <p>This is my first website hosted on GitHub Pages.</p>
+   
+    <div class="hero">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a> <!-- Yeh Contact Page Open Karega -->
+        </nav>
+        
+        <h1>Welcome to Our Restaurant</h1>
+        <p>Enjoy the best food in town!</p>
+    </div>
+
+    <div class="contact-section">
+        <div class="contact-column">
+            <h2>Contact Info</h2>
+            <p><strong>Crescent Restaurant & Banquet</strong></p>
+            <p>Opp. Raj Party Plot, Nr. Indira Statue, Lambhvel Road, Anand - 388001, Gujarat (India)</p>
+            <p>Email: <a href="mailto:info@crescent-restaurant.com" style="color:white;">info@crescent-restaurant.com</a></p>
+            <p>Website: <a href="http://www.crescent-restaurant.com" target="_blank" style="color:white;">www.crescent-restaurant.com</a></p>
+        </div>
+        <div class="contact-column">
+            <h2>For Inquiry</h2>
+            <p><strong>For Restaurant Inquiry:</strong></p>
+            <p>📞 +91 26922 66429 | +91 75750 66429</p>
+            
+            <p><strong>For Parcel / Take Away:</strong></p>
+            <p>📞 +91 97238 07231</p>
+
+            <p><strong>Timing:</strong></p>
+            <p>Lunch: 10:30 AM To 03:00 PM</p>
+            <p>Dinner: 06:30 PM To 10:30 PM</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 Our Restaurant. All rights reserved.</p>
+    </div>
+
 </body>
 </html>
-
